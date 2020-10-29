@@ -1,0 +1,58 @@
+Day 1 of learning FastAPI:
+--------------------------
+Official documentation:
+https://fastapi.tiangolo.com/
+
+Fast API is an lightweight web development framework of python which is used especially to design APIs.
+-------
+
+User Interfaces with fastAPI:
+	1. Swagger UI
+	2. Redoc
+=========================================================================================================
+Type hints:
+----------
+
+Type hints give us more precisioned results while using autocomplete.
+
+Code example:
+
+def get_full_name(first_name: str, last_name: str):
+    full_name = first_name.title() + " " + last_name.title()
+    return full_name
+
+
+print(get_full_name("john", "doe"))
+
+	1.So now as we already pass in the type hint the autocomplete gives us suggestions related to the data type specified.
+	2.In addition to that you get error analyis on the go
+
+Declaring type hints for iterables and other data types:
+--------------------------------------------------------
+
+There are some data structures that can contain other values, like dict, list, set and tuple. And the internal values can have their own type too.
+
+To declare those types and the internal types, you can use the standard Python module typing.
+
+from typing import List
+def process_items(items: List[str]):
+    for item in items:
+        print(item)
+
+Using optional type hints:
+-------------------------
+
+You can also use Optional to declare that a variable has a type, like str, but that it is "optional", which means that it could also be None.
+
+from typing import Optional
+def say_hi(name: Optional[str] = None):
+    if name is not None:
+        print(f"Hey {name}!")
+    else:
+        print("Hello World")
+
+Note: u can also use classes as type hints(refer documentation)
+
+
+
+ 
