@@ -1,0 +1,21 @@
+Project title:
+==============
+Image Classification using Deep Learing.
+
+Project Description:
+====================
+A deep learning model  to classify an input image into one of the two categories ie, cut-off or complete
+
+Project requirements:
+=====================
+
+1. Image dataset containing images of the top view of consumer products
+2. A photo editor tool to generate positive images (ie, cut-off images)
+3. A computer vision tool (eg.openCV) to extract only the required Region Of Interest from the Images.
+4. Deep learning libraries such as keras and tensorflow.
+
+Expected outcome:
+=================
+The model should recognize any input image as cut-off or complete
+
+
