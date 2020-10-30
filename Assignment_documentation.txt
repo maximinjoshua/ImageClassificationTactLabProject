@@ -1,3 +1,5 @@
+29/10/2020
+
 Project title:
 ==============
 Image Classification using Deep Learing.
@@ -17,5 +19,13 @@ Project requirements:
 Expected outcome:
 =================
 The model should recognize any input image as cut-off or complete
+
+===========================================================================================================
+30/10/2020
+
+Data collection:
+
+	1.Downloaded 110+ images manually for the project from google images.
+	2.Edited(using pixlr) and selected 108  images for further use.
 
 
