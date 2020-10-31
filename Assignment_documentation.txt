@@ -27,5 +27,13 @@ Data collection:
 
 	1.Downloaded 110+ images manually for the project from google images.
 	2.Edited(using pixlr) and selected 108  images for further use.
+===========================================================================================================
+31/10/2020
+
+1.Edited the images for training and validation.
+2.Built a CNN model which gave an accuracy of 0.5, which is useless.
+
+Results: Model dropped. Making searches for a better solution.
+============================================================================================================ 
 
 
