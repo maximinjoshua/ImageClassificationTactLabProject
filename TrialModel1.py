@@ -20,14 +20,14 @@ training_set = train_datagen.flow_from_directory('D:/tacti and tact/images/train
 validation_datagen = ImageDataGenerator(rescale = 1./255)
 validation_set = validation_datagen.flow_from_directory('D:/tacti and tact/images/validation',
                                             target_size = (64, 64),
-                                            batch_size = 16,
+                                            batch_size = 32,
                                             class_mode = 'binary')
 
 cnn = tf.keras.models.Sequential([Conv2D(filters=32, kernel_size=3, activation='relu', input_shape=[64, 64, 3]),
                                   MaxPool2D(pool_size=2, strides=2),
 
                                   Flatten(),
-                                  Dense(units=128, activation='relu'),
+                                  Dense(units=64, activation='relu'),
                                   Dense(units=1, activation='sigmoid')
                           ])                                        
                     
